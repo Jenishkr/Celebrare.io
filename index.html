@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrare</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="upper">
+                <textarea id="textInput" placeholder="Type your text here..."></textarea>
+            </div>
+            <div class="lower">
+                <div id="output" style="border: none;" class="output" draggable="true">Your edited text will appear here..</div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="options">
+                <label for="fontSelect" style="font-weight: bold;">Select Font:</label>
+                <select id="fontSelect">
+                    <option value="Arial">Arial</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Trebuchet MS">Trebuchet MS</option>
+                    <option value="Lucida Console">Lucida Console</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Garamond">Garamond</option>
+                    <option value="Palatino">Palatino</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Gill Sans">Gill Sans</option>
+                    <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+                    <option value="Arial Black">Arial Black</option>
+                </select>
+                <br><br>
+
+                <div class="buttons">
+                    <button id="boldButton">Bold</button>
+                    <button id="italicButton">Italic</button>
+                    <button id="underlineButton">Underline</button>
+                </div>
+
+                <label style="font-weight: bold;" for="fontSizeRange">Select Font Size:</label>
+                <input type="number" id="fontSizeRange" min="10" max="72" value="24" class="font-size-input">
+                <br><br>
+                 
+                <label for="colorPicker" style="font-weight: bold;">Select Text Color:</label>
+                <input type="color" id="colorPicker" value="#000000">
+                <br><br>
+
+                <div class="buttons">
+                    <button id="undoButton">Undo</button>
+                    <button id="redoButton">Redo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
